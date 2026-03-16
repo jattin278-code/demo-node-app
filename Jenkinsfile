@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/jattin278-code/demo-node-app.git'
+                git branch: 'main', url: 'https://github.com/jattin278-code/demo-node-app.git'
             }
         }
 
