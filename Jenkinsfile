@@ -27,5 +27,11 @@ pipeline {
             }
         }
 
+        stage('Trivy Security Scan') {
+            steps {
+                sh 'trivy image demo-node-app:latest'
+            }
+        }
+
     }
 }
